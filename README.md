@@ -1,50 +1,5 @@
-<<<<<<< HEAD
-🧠 AI Research Paper Analyzer
-
-An AI-powered web application that retrieves research papers from multiple academic sources and generates concise summaries using Large Language Models (LLMs), with MongoDB-based caching for improved performance and reduced API usage.
-
-🚀 Features
-🔍 Multi-source Paper Retrieval
-Fetches research papers from:
-arXiv
-Semantic Scholar
-🧾 AI-Based Summarization
-Uses OpenAI API to generate concise summaries from abstracts
-Designed to provide quick insights into research papers
-🗄️ MongoDB Summary Caching
-Stores generated summaries
-Avoids recomputation for previously processed papers
-Improves response time and reduces API cost
-⚡ Efficient API Workflow
-Checks database before calling OpenAI
-Returns cached summaries instantly when available
-🌐 Flask-Based Web Interface
-Simple UI for searching and analyzing research papers
-
-🏗️ System Architecture
-User Query
-   ↓
-Flask API (app.py)
-   ↓
-Paper Fetcher (arXiv + Semantic Scholar)
-   ↓
-Check MongoDB (summary exists?)
-   ↓            ↓
-Yes ✅         No ❌
- ↓              ↓
-Return       Generate Summary (OpenAI)
-                 ↓
-           Store in MongoDB
-                 ↓
-            Return Response
-
-🧑‍💻 Tech Stack
-Backend: Flask
-Database: MongoDB Atlas
-AI: OpenAI API
-APIs: arXiv, Semantic Scholar
-=======
 # ResearchLens
+
 An AI-powered research paper discovery and analysis platform that aggregates academic papers from multiple sources, generates concise AI-driven summaries, and uses intelligent caching to improve performance and reduce API costs.
 
 ## Overview
@@ -177,6 +132,11 @@ ResearchLens/
 
 ### Clone Repository
 
+```bash
+git clone https://github.com/tishyadave/ResearchLens.git
+cd researchos
+```
+
 ### Create Virtual Environment
 
 ```bash
@@ -244,5 +204,7 @@ http://127.0.0.1:5000
 
 ## Motivation
 
-Academic research is growing at an unprecedented rate, making it increasingly difficult to keep up with new publications. ResearchLens aims to bridge this gap by combining academic search with AI-powered summarization, enabling researchers and students to identify relevant work and understand it more efficiently.
->>>>>>> fe8242afc727b04528e5986d9e935e98868d0dfa
+Academic research is growing at an unprecedented rate, making it increasingly difficult to keep up with new publications. ResearchOS aims to bridge this gap by combining academic search with AI-powered summarization, enabling researchers and students to identify relevant work and understand it more efficiently.
+
+
+This project is licensed under the MIT License.
